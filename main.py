@@ -379,7 +379,7 @@ class SnakeGameClass:
 
 
         df = pd.DataFrame(self.dataDict,)
-        df.to_csv('data/dataTrack.csv', index=False)
+        df.to_csv(f"data/{self.dataDict['Khoa'][-1}_{self.dataDict['HoTen'][-1]}_{self.dataDict['Nganh'][-1]}_{self.dataDict['MSSV'][-1]}.csv", index=False)
 
 
 def main(opt):
